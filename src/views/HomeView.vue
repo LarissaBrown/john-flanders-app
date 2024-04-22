@@ -15,59 +15,66 @@
         </div>
       </div>
     </section>
-      <EventsList />
-    </div>
+    <EventsList />
+  </div>
 </template>
 <script>
-  import EventsList from '../components/EventsList';
-  export default {
-    name: 'HomeView',
-    components: {
-      EventsList,
-    },
-  };
+import EventsList from '../components/EventsList';
+export default {
+  name: 'HomeView',
+  components: {
+    EventsList,
+  },
+};
 </script>
 <style lang="scss" scoped>
-  .home {
-    background-color: rgb(248, 225, 111);
+.home {
+  background-color: rgb(248, 225, 111);
+}
+
+.hero {
+  text-align: center;
+  background-image: url('../assets/TheGoBetweenJohnFlanders.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 320px;
+}
+
+.hero-body .title {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  padding: 40px 0 20px 0;
+  font-size: 60px;
+}
+
+.subtitle {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+}
+
+.button-block {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: absolute;
+  bottom: -150px;
+
+  .button {
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  .hero {
-    text-align: center;
-    background-image: url('../assets/TheGoBetweenJohnFlanders.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 320px;
-  }
-  .hero-body .title {
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-    padding: 40px 0 20px 0;
-    font-size: 60px;
-  }
-  .subtitle {
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
-    font-size: 30px;
-  }
-  .button-block {
-    text-align: center;
+
+  .welcome {
+    width: 400px;
+    padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    position: absolute;
-    bottom: -150px;
-    .button {
-      margin-right: 50px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    .welcome {
-      width: 400px;
-      padding: 10px;
-      margin-left: auto;
-      margin-right: auto;
-    }
   }
-  .is-xl {
-    font-size: 1.7rem;
-  }
+}
+
+.is-xl {
+  font-size: 1.7rem;
+}
 </style>
