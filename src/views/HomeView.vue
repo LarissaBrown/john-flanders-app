@@ -29,7 +29,7 @@
 </script>
 <style lang="scss" scoped>
   .home {
-    background-color: rgb(226, 198, 59);
+    background-color: rgb(248, 225, 111);
   }
   .hero {
     text-align: center;
