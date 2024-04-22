@@ -5,13 +5,8 @@
         <a class="jflogo" href="/">
           <img alt="logo John Flanders" src="../../assets/logo.png">
         </a>
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -33,30 +28,33 @@
         </div>
       </div>
     </nav>
-    </div>
-  </template>
-  <script>
+  </div>
+</template>
+<script>
 //import AboutView from '@/views/AboutView.vue';
 
-    export default {
-      name: 'NavView',
+export default {
+  name: 'NavView',
 
-    };
-  </script>
-  <style lang="scss" scoped>
-    nav {
-      padding-top: 25px;
-      padding-bottom: 30px;
-      padding-left: 25px;
-      a {
-        font-weight: bold;
-        color: #2c3e50;
-        &.router-link-exact-active {
-          color: #ca8608;
-        }
-      }
+};
+</script>
+<style lang="scss" scoped>
+nav {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #ca8608;
     }
-    .jflogo {
-      height: 100%;
-    }
-  </style>
+  }
+}
+
+.jflogo {
+  height: 100%;
+}
+</style>
