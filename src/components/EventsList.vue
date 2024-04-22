@@ -25,6 +25,7 @@ export default {
   margin-top: 100px;
   text-align: center;
 }
+
 .subtitle {
   padding-top: 50px;
 }
